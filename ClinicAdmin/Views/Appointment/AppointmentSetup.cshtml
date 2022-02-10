@@ -1,0 +1,167 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+    <script src="~/assets/js/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript">
+        document.getElementById('menuAppointment').className = 'active';
+    </script>
+</head>
+
+<div class="row">
+    <div class="col-lg-8 offset-lg-2">
+        <h4 class="page-title">Add Appointment</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-8 offset-lg-2">
+        <form>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group gender-select">
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input id="rdoWalkInPatient" type="radio" name="patient" class="form-check-input" checked>WalkIn Patient
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input id="rdoMemberPatient" type="radio" name="patient" class="form-check-input">Member Patient
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="divWalkInPatient" class="form-group">
+                        <label>Patient<span class="text-danger">&nbsp;*</span></label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div id="divMemberPatient" class="form-group" style="display:none">
+                        <label>Patient<span class="text-danger">&nbsp;*</span></label>
+                        <select class="select">
+                            <option>Please Select</option>
+                            <option>PT-0001(Patient Name)</option>
+                            <option>PT-0002(Patient Name)</option>
+                            <option>PT-0003(Patient Name)</option>
+                        </select>
+                    </div>
+                </div>    
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Patient Phone Number<span class="text-danger">&nbsp;*</span></label>
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Patient Age</label>
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group gender-select">
+                        <label class="gen-label">Gender</label>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" name="gender" class="form-check-input">Male
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" name="gender" class="form-check-input">Female
+                            </label>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Doctor<span class="text-danger">&nbsp;*</span></label>
+                        <select class="select">
+                            <option>Select</option>
+                            <option>Doctor Name</option>
+                            <option>Doctor Name</option>
+                            <option>Doctor Name</option>
+                        </select>
+                    </div>
+                </div>                   
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Appointment Date<span class="text-danger">&nbsp;*</span></label>
+                        <div class="cal-icon">
+                            <input type="text" class="form-control datetimepicker">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Appointment Time<span class="text-danger">&nbsp;*</span></label>
+                        <select class="select">
+                            <option>Select</option>
+                            <option>8:00 AM - 10:00 AM</option>
+                            <option>5:00 PM - 7:00 PM</option>
+                        </select>
+                    </div>
+                </div>    
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Appointment ID</label>
+                        <input class="form-control" type="text" value="APT-0001" readonly="">
+                    </div>
+                </div>                                    
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Reason for Appointment</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea cols="30" rows="4" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label class="display-block">Appointment Status</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="status" id="product_active" value="option1" checked>
+                    <label class="form-check-label" for="product_active">
+                        Active
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="status" id="product_inactive" value="option2">
+                    <label class="form-check-label" for="product_inactive">
+                        Inactive
+                    </label>
+                </div>
+            </div>
+            <div class="m-t-20 text-center">
+                <button class="btn btn-primary submit-btn">Create Appointment</button>
+            </div>
+</form>
+</div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+
+        $('#rdoWalkInPatient').change(function () {
+            $('#divWalkInPatient').show();
+            $('#divMemberPatient').hide();
+        })
+
+        $('#rdoMemberPatient').change(function () {
+            $('#divWalkInPatient').hide();
+            $('#divMemberPatient').show();
+        })
+
+    })
+</script>
+
+        
+
+

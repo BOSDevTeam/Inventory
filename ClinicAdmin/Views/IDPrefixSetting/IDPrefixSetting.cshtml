@@ -1,0 +1,80 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutSetting.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+
+    <script type="text/javascript">
+        document.getElementById('menuAutoIDSetting').className = 'active';
+    </script>
+</head>
+
+<div class="row">
+    <div class="col-md-12">
+        <h4 class="page-title">ID Prefix Setting</h4>
+    </div>
+</div>
+
+<div class="profile-tabs">
+    <ul class="nav nav-tabs nav-tabs-bottom">
+        <li class="nav-item"><a class="nav-link active" href="#bottom-tab2" data-toggle="tab">Employee</a></li>
+        <li class="nav-item"><a class="nav-link" href="#bottom-tab3" data-toggle="tab">Patient</a></li>
+        <li class="nav-item"><a class="nav-link" href="#bottom-tab4" data-toggle="tab">Appointment</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane show active" id="bottom-tab2">
+            <div class="card-box profile-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Doctor prefix</label>
+                            <div>
+                                <input class="form-control" value="DR" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>User prefix</label>
+                            <div>
+                                <input class="form-control" value="UR" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="bottom-tab3">
+            <div class="card-box profile-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Patient prefix</label>
+                            <div>
+                                <input class="form-control" value="PT" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="bottom-tab4">
+            <div class="card-box profile-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Appointment prefix</label>
+                            <div>
+                                <input class="form-control" value="APT" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

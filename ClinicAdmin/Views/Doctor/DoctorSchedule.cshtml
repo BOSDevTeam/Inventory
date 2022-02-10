@@ -1,0 +1,69 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+
+    <script type="text/javascript">
+        document.getElementById('menuDoctor').className = 'active';
+    </script>
+</head>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h4 class="page-title">Dr. Aung Aung's Active Schedule</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table table-border table-striped custom-table mb-0">
+                <thead>
+                    <tr>
+                        <th>Available Days</th>
+                        <th>Available Time</th>                     
+                        <th>Current Total Patient</th>                      
+                        <th>Patient Limit</th>
+                        <th>Available APT No.</th>
+                        <th class="text-right">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>5:00 PM - 7:00 PM</td>
+                        <td>30</td>
+                        <td><span class="custom-badge status-red">Full</span></td>
+                        <td>-</td>
+                        <td class="text-right">
+                            <a href="#" style="cursor:default">Add Appointment</a>                          
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>5:00 PM - 7:00 PM</td>
+                        <td>3</td>
+                        <td><span class="custom-badge status-green">Available</span></td>
+                        <td>APT-0004</td>
+                        <td class="text-right">
+                            <a href="~/Appointment/AppointmentSetup">Add Appointment</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>5:00 PM - 7:00 PM</td>
+                        <td>0</td>
+                        <td><span class="custom-badge status-green">Available</span></td>
+                        <td>APT-0001</td>
+                        <td class="text-right">
+                            <a href="~/Appointment/AppointmentSetup">Add Appointment</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

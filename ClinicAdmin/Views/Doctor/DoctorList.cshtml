@@ -1,0 +1,320 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+
+    <script type="text/javascript">
+        document.getElementById('menuDoctor').className = 'active';
+    </script>
+</head>
+
+<div class="row">
+    <div class="col-sm-4 col-3">
+        <h4 class="page-title">Doctors</h4>
+    </div>
+    <div class="col-sm-8 col-9 text-right m-b-20">
+        <a href="~/Doctor/DoctorSetup" class="btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add Doctor</a>
+    </div>
+</div>
+
+<div class="row filter-row">
+    <div class="col-sm-6 col-md-3">
+        <div class="form-group form-focus" style="display:block">
+            <label class="focus-label">Department</label>
+            <div>
+                <select class="select form-control floating">
+                    <option>Select</option>
+                    <option>Dentists</option>
+                    <option>Neurology</option>
+                    <option>Opthalmology</option>
+                    <option>Orthopedics</option>
+                    <option>Cancer Department</option>
+                    <option>ENT Department</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="form-group form-focus" style="display:block">
+            <label class="focus-label">Specialism</label>
+            <div>
+                <input class="form-control floating" type="text">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="form-group form-focus" style="display:block">
+            <label class="focus-label">Gender</label>
+            <div>
+                <select class="select form-control floating">
+                    <option>Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3" style="width:100%">
+        <a href="#" class="btn btn-success" style="width:75%"> Search </a>
+        <a href="#" class="btn btn-white" style="width:15%"><i class="fa fa-refresh"></i></a>
+    </div>
+</div>
+
+<div class="row doctor-grid">
+    <div class="col-md-4 col-sm-4  col-lg-3">
+        <div class="profile-widget">
+            <div class="doctor-img">
+                <a class="avatar" href="~/Doctor/DoctorProfile"><img alt="" src="~/assets/img/doctor-thumb-03.png"></a>
+            </div>
+            <div class="dropdown profile-action">
+                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="~/Doctor/DoctorSetup"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                </div>
+            </div>
+            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Dr. Aung Aung</a></h4>
+            <div class="doc-prof">Gynecologist</div>
+            <div class="user-country">
+                <i class="fa fa-phone"></i> 09-951114320
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4  col-lg-3">
+        <div class="profile-widget">
+            <div class="doctor-img">
+                <a class="avatar" href="~/Doctor/DoctorProfile"><img alt="" src="~/assets/img/doctor-thumb-07.png"></a>
+            </div>
+            <div class="dropdown profile-action">
+                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="~/Doctor/DoctorSetup"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                </div>
+            </div>
+            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Dr. Htun Htun</a></h4>
+            <div class="doc-prof">Psychiatrist</div>
+            <div class="user-country">
+                <i class="fa fa-phone"></i> 09-951114320
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4  col-lg-3">
+        <div class="profile-widget">
+            <div class="doctor-img">
+                <a class="avatar" href="~/Doctor/DoctorProfile"><img alt="" src="~/assets/img/doctor-thumb-04.png"></a>
+            </div>
+            <div class="dropdown profile-action">
+                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="~/Doctor/DoctorSetup"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                </div>
+            </div>
+            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Dr. Min Aung</a></h4>
+            <div class="doc-prof">Cardiologist</div>
+            <div class="user-country">
+                <i class="fa fa-phone"></i> 09-951114320
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4  col-lg-3">
+        <div class="profile-widget">
+            <div class="doctor-img">
+                <a class="avatar" href="~/Doctor/DoctorProfile"><img alt="" src="~/assets/img/doctor-thumb-11.png"></a>
+            </div>
+            <div class="dropdown profile-action">
+                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="~/Doctor/DoctorSetup"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                </div>
+            </div>
+            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Dr. Soe Win</a></h4>
+            <div class="doc-prof">Urologist</div>
+            <div class="user-country">
+                <i class="fa fa-phone"></i> 09-951114320
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4  col-lg-3">
+        <div class="profile-widget">
+            <div class="doctor-img">
+                <a class="avatar" href="~/Doctor/DoctorProfile"><img alt="" src="~/assets/img/doctor-thumb-12.png"></a>
+            </div>
+            <div class="dropdown profile-action">
+                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="~/Doctor/DoctorSetup"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                </div>
+            </div>
+            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Dr. Tin Lat</a></h4>
+            <div class="doc-prof">Ophthalmologist</div>
+            <div class="user-country">
+                <i class="fa fa-phone"></i> 09-951114320
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4  col-lg-3">
+        <div class="profile-widget">
+            <div class="doctor-img">
+                <a class="avatar" href="~/Doctor/DoctorProfile"><img alt="" src="~/assets/img/doctor-thumb-02.png"></a>
+            </div>
+            <div class="dropdown profile-action">
+                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="~/Doctor/DoctorSetup"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                </div>
+            </div>
+            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Dr. Myo Thwe</a></h4>
+            <div class="doc-prof">Dentist</div>
+            <div class="user-country">
+                <i class="fa fa-phone"></i> 09-951114320
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4  col-lg-3">
+        <div class="profile-widget">
+            <div class="doctor-img">
+                <a class="avatar" href="~/Doctor/DoctorProfile"><img alt="" src="~/assets/img/doctor-thumb-09.png"></a>
+            </div>
+            <div class="dropdown profile-action">
+                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="~/Doctor/DoctorSetup"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                </div>
+            </div>
+            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Dr. San Lwin</a></h4>
+            <div class="doc-prof">Oncologist</div>
+            <div class="user-country">
+                <i class="fa fa-phone"></i> 09-951114320
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4  col-lg-3">
+        <div class="profile-widget">
+            <div class="doctor-img">
+                <a class="avatar" href="~/Doctor/DoctorProfile"><img alt="" src="~/assets/img/doctor-thumb-01.png"></a>
+            </div>
+            <div class="dropdown profile-action">
+                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="~/Doctor/DoctorSetup"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                </div>
+            </div>
+            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Dr. Mi Mi</a></h4>
+            <div class="doc-prof">Neurologist</div>
+            <div class="user-country">
+                <i class="fa fa-phone"></i> 09-951114320
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4  col-lg-3">
+        <div class="profile-widget">
+            <div class="doctor-img">
+                <a class="avatar" href="~/Doctor/DoctorProfile"><img alt="" src="~/assets/img/doctor-thumb-05.png"></a>
+            </div>
+            <div class="dropdown profile-action">
+                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="~/Doctor/DoctorSetup"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                </div>
+            </div>
+            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Dr. Hla Hla</a></h4>
+            <div class="doc-prof">General Surgery</div>
+            <div class="user-country">
+                <i class="fa fa-phone"></i> 09-951114320
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4  col-lg-3">
+        <div class="profile-widget">
+            <div class="doctor-img">
+                <a class="avatar" href="~/Doctor/DoctorProfile"><img alt="" src="~/assets/img/doctor-thumb-10.png"></a>
+            </div>
+            <div class="dropdown profile-action">
+                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="~/Doctor/DoctorSetup"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                </div>
+            </div>
+            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Dr. Nwe Nwe</a></h4>
+            <div class="doc-prof">Radiologist</div>
+            <div class="user-country">
+                <i class="fa fa-phone"></i> 09-951114320
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4  col-lg-3">
+        <div class="profile-widget">
+            <div class="doctor-img">
+                <a class="avatar" href="~/Doctor/DoctorProfile"><img alt="" src="~/assets/img/doctor-thumb-08.png"></a>
+            </div>
+            <div class="dropdown profile-action">
+                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="~/Doctor/DoctorSetup"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                </div>
+            </div>
+            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Dr. Ko Ko</a></h4>
+            <div class="doc-prof">Pediatrics</div>
+            <div class="user-country">
+                <i class="fa fa-phone"></i> 09-951114320
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4  col-lg-3">
+        <div class="profile-widget">
+            <div class="doctor-img">
+                <a class="avatar" href="~/Doctor/DoctorProfile"><img alt="" src="~/assets/img/doctor-thumb-06.png"></a>
+            </div>
+            <div class="dropdown profile-action">
+                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="~/Doctor/DoctorSetup"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                </div>
+            </div>
+            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Dr. Myo Oo</a></h4>
+            <div class="doc-prof">Physical Therapist</div>
+            <div class="user-country">
+                <i class="fa fa-phone"></i> 09-951114320
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="see-all">
+            <a class="see-all-btn" href="javascript:void(0);">Load More</a>
+        </div>
+    </div>
+</div>
+
+<div id="delete_doctor" class="modal fade delete-modal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="~/assets/img/sent.png" alt="" width="50" height="46">
+                <h3>Are you sure want to delete this Doctor?</h3>
+                <div class="m-t-20">
+                    <a href="#" class="btn btn-white" data-dismiss="modal">Close</a>
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+          
+           
+
+

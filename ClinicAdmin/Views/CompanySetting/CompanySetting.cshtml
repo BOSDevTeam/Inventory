@@ -1,0 +1,98 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutSetting.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+
+    <script type="text/javascript">
+        document.getElementById('menuCompanySetting').className = 'active';
+    </script>
+</head>
+
+<div class="row">
+    <div class="col-lg-8 offset-lg-2">
+        <form>
+            <h3 class="page-title">Company Setting</h3>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Company Name<span class="text-danger">&nbsp;*</span></label>
+                        <input class="form-control" type="text" value="ABC Clinic">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Contact Person<span class="text-danger">&nbsp;*</span></label>
+                        <input class="form-control" value="CEO Name" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Email<span class="text-danger">&nbsp;*</span></label>
+                        <input class="form-control" value="abcclinic@example.com" type="email">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Phone Number<span class="text-danger">&nbsp;*</span></label>
+                        <input class="form-control" value="01-501235" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Mobile Number<span class="text-danger">&nbsp;*</span></label>
+                        <input class="form-control" value="09-975334290" type="text">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Fax</label>
+                        <input class="form-control" value="000-000-0000" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label>Address<span class="text-danger">&nbsp;*</span></label>
+                        <input class="form-control" value="3864 Sample Street, Sample Twp, Yangon" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label>Website Url</label>
+                        <input class="form-control" value="https://www.example.com" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Tax (%)</label>
+                        <input class="form-control" value="0" type="number" min="0" max="100">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Charges (%)</label>
+                        <input class="form-control" value="0" type="number" min="0" max="100">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center m-t-20">
+                    <button type="button" class="btn btn-primary submit-btn">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+

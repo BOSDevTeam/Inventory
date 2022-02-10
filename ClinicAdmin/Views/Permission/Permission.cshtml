@@ -1,0 +1,270 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutSetting.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+
+    <script type="text/javascript">
+        document.getElementById('menuPermission').className = 'active';
+    </script>
+</head>
+
+<div class="row">
+    <div class="col-sm-8">
+        <h4 class="page-title">Roles & Permissions</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-3">
+        <h6 class="card-title m-b-20">Users</h6>
+        <div class="roles-menu">
+            <ul>
+                <li class="active"><a href="javascript:void(0);">Clinic Admin</a></li>
+                <li><a href="#">Sale Counter</a></li>               
+            </ul>
+        </div>
+    </div>
+    <div class="col-sm-8 col-md-8 col-lg-8 col-xl-9">
+        <h6 class="card-title m-b-20">Module Access</h6>
+        <div class="m-b-30">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    Doctors
+                    <div class="material-switch float-right">
+                        <input id="staff_module" type="checkbox">
+                        <label for="staff_module" class="badge-success"></label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    Patients
+                    <div class="material-switch float-right">
+                        <input id="holidays_module" type="checkbox">
+                        <label for="holidays_module" class="badge-success"></label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    Appointments
+                    <div class="material-switch float-right">
+                        <input id="leave_module" type="checkbox">
+                        <label for="leave_module" class="badge-success"></label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    Doctor Schedules
+                    <div class="material-switch float-right">
+                        <input id="events_module" type="checkbox">
+                        <label for="events_module" class="badge-success"></label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    Invoices
+                    <div class="material-switch float-right">
+                        <input id="events_module" type="checkbox">
+                        <label for="events_module" class="badge-success"></label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    Departments
+                    <div class="material-switch float-right">
+                        <input id="chat_module" type="checkbox">
+                        <label for="chat_module" class="badge-success"></label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    Items
+                    <div class="material-switch float-right">
+                        <input id="chat_module" type="checkbox">
+                        <label for="chat_module" class="badge-success"></label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    Users
+                    <div class="material-switch float-right">
+                        <input id="chat_module" type="checkbox">
+                        <label for="chat_module" class="badge-success"></label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    Reports
+                    <div class="material-switch float-right">
+                        <input id="chat_module" type="checkbox">
+                        <label for="chat_module" class="badge-success"></label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    Settings
+                    <div class="material-switch float-right">
+                        <input id="chat_module" type="checkbox">
+                        <label for="chat_module" class="badge-success"></label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped custom-table">
+                <thead>
+                    <tr>
+                        <th>Module Permission</th>
+                        <th class="text-center">Read</th>
+                        <th class="text-center">Write</th>
+                        <th class="text-center">Create</th>
+                        <th class="text-center">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Doctors</td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>                     
+                    </tr>
+                    <tr>
+                        <td>Patients</td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>                     
+                    </tr>
+                    <tr>
+                        <td>Appointments</td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Doctor Schedules</td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>                      
+                    </tr>
+                    <tr>
+                        <td>Invoices</td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Departments</td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>                      
+                    </tr>
+                    <tr>
+                        <td>Items</td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Users</td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Reports</td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Settings</td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                        <td class="text-center">
+                            <input type="checkbox" checked="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
